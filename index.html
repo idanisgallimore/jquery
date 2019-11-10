@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sound Machine</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="jQuery.js"></script>
+</head>
+<body>
+   <div id="drum-machine" class="container">
+    <h1 id="title" class="text-center text-primary">Sound Machine</h1>
+
+    <div id="display-container" class="bg-info text-white">
+        <p id="display" class="text-center"></p>
+    </div>
+    <!-- First 3 -->
+    <div class="note-container container">
+        <div class="row">
+            <div class="col-4 note">
+                <audio class="clip" id="Q">
+                    <source src="sounds\1q.mp3" type="audio/mp3" />
+                    <source src="sounds\1q.wav" type="audio/wav" />
+                </audio>
+                <button id="btnq" class="drum-pad bg-secondary text-white">Q</button>
+           </div>
+            <div class="col-4 note clip">
+                <audio class="clip" id="W">
+                    <source src="sounds\2w.mp3" type="audio/mp3" />
+                    <source src="sounds\2w.wav" type="audio/wav" />
+                </audio>
+                <button id="btnw" class="drum-pad bg-secondary text-white">W</button>
+           </div>
+            <div class="col-4 note clip">
+                <audio class="clip" id="E">
+                    <source src="sounds\3e.mp3" type="audio/mp3" />
+                    <source src="sounds\3e.wav" type="audio/wav" />
+                </audio>
+                <button id="btne" class="drum-pad bg-secondary text-white">E</button>
+           </div>
+        </div>
+       <!-- 2nd three -->
+       <div class="row">
+           <div class="col-4 note clip">
+                <audio class="clip" id="A">
+                    <source src="sounds\4a.mp3" type="audio/mp3" />
+                    <source src="sounds\4a.wav" type="audio/wav" />
+                </audio>
+                <button id="btna" class="drum-pad bg-secondary text-white">A</button>
+           </div>
+            <div class="col-4 note clip">
+                <audio class="clip" id="S">
+                    <source src="sounds\5s.mp3" type="audio/mp3" />
+                    <source src="sounds\5s.wav" type="audio/wav" />
+                </audio>
+                <button id="btns" class="drum-pad bg-secondary text-white">S</button>
+           </div>
+            <div class="col-4 note clip">
+                <audio class="clip" id="D">
+                    <source src="sounds\6d.mp3" type="audio/mp3" />
+                    <source src="sounds\6d.wav" type="audio/wav" />
+                </audio>
+                <button id="btnd" class="drum-pad bg-secondary text-white">D</button>
+           </div>
+       </div>
+    
+       <!-- last three -->
+       <div class="row">
+            <div class="col-4 note clip">
+                 <audio class="clip" id="Z">
+                     <source src="sounds\7z.mp3" type="audio/mp3" />
+                     <source src="sounds\7z.wav" type="audio/wav" />
+                 </audio>
+                 <button id="btnz" class="drum-pad bg-secondary text-white">Z</button>
+            </div>
+             <div class="col-4 note clip">
+                 <audio class="clip" id="X">
+                     <source src="sounds\8x.mp3" type="audio/mp3" />
+                     <source src="sounds\8x.wav" type="audio/wav" />
+                 </audio>
+                 <button id="btnx" class="drum-pad bg-secondary text-white">X</button>
+            </div>
+             <div class="col-4 note clip">
+                 <audio class="clip" id="C">
+                     <source src="sounds\9c.mp3" type="audio/mp3" />
+                     <source src="sounds\9c.wav" type="audio/wav" />
+                 </audio>
+                 <button id="btnc" class="drum-pad bg-secondary text-white">C</button>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+</div>
+    <!-- Js file -->
+    <script src="script.js"></script>
+    <!-- JQuery -->
+</body>
+</html>
